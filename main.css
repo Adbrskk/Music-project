@@ -432,7 +432,7 @@ ol[class] {
         float: left;
         width: 500px;
         height: 300px;
-        margin: 0 27px 0 0;
+        margin: 0 27px 10px 0;
     }
 
     .music__main_text {
@@ -449,12 +449,58 @@ ol[class] {
 
     .float-right {
         margin-left: 8px;
+        margin-bottom: 4px;
     }
 
     .content__music-inside .container__music {
         max-width: 1250px;
     }
-}
+
+    .music__macbook h3 {
+        font-size: 26px;
+    }
+
+    .float-left {
+        margin-right: 18px;
+    }
+
+    .frameworks h3 {
+        font-size: 32px;
+    }
+
+    .frameworks-recommendations h3 {
+        font-size: 28px;
+    }
+
+    .program-macos h3 {
+        font-size: 30px;
+    }
+
+    .program-macos h3 span {
+        margin-bottom: 32px;
+    }
+
+    .program-macos__item:nth-child(1),
+    .program-macos__item:nth-child(3) {
+        margin-right: 32px;
+    }
+
+    .music__main_block {
+        padding: 180px 150px;
+    }
+
+    .music__inspiration_block .music-h3 {
+        transform: translateX(-550px);
+    }
+
+    .for-creating-tracks h3 {
+        font-size: 32px;
+    }
+
+    .big-font {
+        font-size: 24px;
+    }
+
 
 @media screen and (max-width: 640px) {
 
