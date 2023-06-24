@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+.content__music-inside {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+.content__music-inside a:not([class]) {
+    text-decoration: revert;
+    color: black;
+}
+
+.content__music-inside .container__music {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content__music-inside img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.music-inside {
+    padding-left: 186px;
+    padding-right: 186px;
+    padding-top: 100px;
+}
+
+.content__music-inside input,
+.content__music-inside button,
+.content__music-inside textarea,
+.content__music-inside select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    .content__music-inside {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.content__music-inside p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.music__main_block {
+    background: url("main-block-img.png");
+    text-align: center;
+    padding: 245px;
+}
+
+.music__main_block h2 {
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 110%;
+    color: #FFFFFF;
+}
+
+.main-music-h3 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.music-h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.music__main_text {
+    margin-bottom: 58px;
+}
+
+.music__main_text p {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 50px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 50px;
+}
+
+.video-music__main_text {
+    float: left;
+    width: 605px;
+    height: 340px;
+    margin: 0 57px 40px 0;
+}
+
+.music__inspiration_block {
+    background: #FAF5FF;
+}
+
+.music__inspiration_block p {
+    margin-bottom: 30px;
+}
+
+.music__inspiration_block .music-h3 {
+    margin-bottom: 27px;
+    padding-right: 490px;
+}
+
+.music__macbook {
+    background: #FAF5FF;
+    padding-bottom: 68px;
+}
+
+.music__macbook h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #484848;
+    font-style: normal;
+}
+
+.music__macbook-advantages {
+    margin-top: 38px;
+}
+
+.big-font {
+    color: #8B54FF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 120%;
+    margin-bottom: 9px;
+}
+
+.music__macbook-advantages p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #484848;
+    margin-bottom: 25px;
+}
+
+.frameworks h3 {
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.frameworks p {
+    margin-bottom: 18px;
+}
+
+.music-center {
+    text-align: center;
+}
+
+.frameworks-recommendations {
+    background: #FAF5FF;
+}
+
+.frameworks-recommendations img {
+    float: left;
+    margin: 0 56px 34px 0;
+}
+
+.frameworks-recommendations h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #484848;
+    margin-bottom: 17px;
+}
+
+.frameworks-recommendations p {
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.program-macos h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.program-macos p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.program-macos .p-last-child {
+    margin-top: 34px;
+    margin-bottom: 100px;
+}
+
+.program-macos__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.program-macos__item {
+    width: 50%;
+    height: 50%;
+    padding: 30px 35px;
+    background: #FAF5FF;
+}
+
+.for-creating-tracks__content-block .float-left {
+    margin-top: 12px;
+}
+
+.for-creating-tracks h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.for-creating-tracks__content-block p {
+    margin-bottom: 28px;
+}
+
+.in-detail {
+    background: #FAF5FF;
+}
+
+.in-detail p {
+    margin-bottom: 16px;
+}
+
+.video-in-detail {
+    margin: 30px auto 0;
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.display-img-desktop {
+    margin: 96px 0;
+}
+
+.display-img-mobile {
+    display: none;
+}
+
+
+    /*.program-macos__item:nth-of-type(even) {*/
+    /*    margin-right: 30px;*/
+    /*}*/
