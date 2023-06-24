@@ -49,6 +49,11 @@ ol[class] {
     color: black;
 }
 
+.intersection {
+    transition: ease-out transform 1s,
+                ease-in opacity 1.5s;
+}
+
 .content__music-inside .container__music {
     max-width: 1512px;
     width: 100%;
@@ -155,6 +160,8 @@ ol[class] {
 .music__inspiration_block .music-h3 {
     margin-bottom: 27px;
     padding-right: 490px;
+    transform: translateX(-1250px);
+    opacity: 0;
 }
 
 .music__macbook {
