@@ -1,11 +1,15 @@
 function intersectionHandler (entries) {
     entries.forEach(entry => {
+        let innerIntersectionElement = entry.target.querySelector(".intersection");
+
         if (entry.isIntersecting) {
             entry.target.style.transform = "none";
             entry.target.style.opacity = "100%";
 
-            entry.target.querySelector(".intersection").style.transform = "none";
-            entry.target.querySelector(".intersection").style.opacity = "100%";
+            if (innerIntersectionElement) {
+                innerIntersectionElement.style.transform = "none";
+                innerIntersectionElement.style.opacity = "100%";
+            }
         }
     });
 }
@@ -25,6 +29,18 @@ document
 
 document
     .querySelectorAll(".music__macbook-advantages div")
+    .forEach(item => {
+        observer.observe(item);
+    });
+
+document
+    .querySelectorAll(".program-macos__item")
+    .forEach(item => {
+        observer.observe(item);
+    });
+
+document
+    .querySelectorAll(".program-macos__item p")
     .forEach(item => {
         observer.observe(item);
     });

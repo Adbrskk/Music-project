@@ -49,6 +49,11 @@ ol[class] {
     color: black;
 }
 
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
+}
+
 .intersection {
     transition: ease-out transform 1s,
                 ease-in opacity 1.5s;
@@ -67,9 +72,7 @@ ol[class] {
 }
 
 .music-inside {
-    padding-left: 186px;
-    padding-right: 186px;
-    padding-top: 100px;
+    padding: 100px 186px;
 }
 
 .content__music-inside input,
@@ -269,6 +272,10 @@ ol[class] {
     font-size: 22px;
 }
 
+.program-macos {
+    overflow: hidden;
+}
+
 .program-macos h3 {
     font-style: normal;
     font-weight: 600;
@@ -298,6 +305,38 @@ ol[class] {
     height: 50%;
     padding: 30px 35px;
     background: #FAF5FF;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.program-macos__item:nth-child(1),
+.program-macos__item:nth-child(4) {
+    opacity: 0;
+}
+
+.program-macos__item:nth-child(2) p,
+.program-macos__item:nth-child(3) p {
+    transform: translateX(-3400px);
+    opacity: 0;
+}
+
+.program-macos__item:before {
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+    background: #FAF5FF;
+    top: 0;
+    z-index: -1;
+}
+
+.program-macos__item:nth-child(1):before {
+    content: "";
+    right: 0;
+}
+
+.program-macos__item:nth-child(4):before {
+    content: "";
+    left: 0;
 }
 
 .for-creating-tracks__content-block .float-left {
