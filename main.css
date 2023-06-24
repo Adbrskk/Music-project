@@ -156,8 +156,33 @@ ol[class] {
     background: #FAF5FF;
 }
 
+.music__inspiration_block img {
+    position: relative;
+    z-index: 2;
+}
+
+.music__inspiration_block div {
+    padding: 24px 0;
+    margin-bottom: 24px;
+    position: relative;
+    opacity: 0;
+}
+
+.music__inspiration_block div:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200%;
+    background: white;
+    z-index: 0;
+}
+
 .music__inspiration_block p {
+    position: relative;
     margin-bottom: 30px;
+    z-index: 2;
 }
 
 .music__inspiration_block .music-h3 {

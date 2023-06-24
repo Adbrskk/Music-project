@@ -19,8 +19,6 @@ let observer = new IntersectionObserver(intersectionHandler, {
     threshold: 0
 });
 
-observer.observe(document.querySelector('.music__inspiration_block .music-h3'));
-
 document
     .querySelectorAll(".music__macbook-advantages p")
     .forEach(item => {
@@ -46,6 +44,8 @@ document
     });
 
 
+observer.observe(document.querySelector('.music__inspiration_block .music-h3'));
+observer.observe(document.querySelector('.music__inspiration_block div'));
 observer.observe(document.querySelector('.frameworks .music-h3'));
 observer.observe(document.querySelector('.frameworks-recommendations h3'));
 observer.observe(document.querySelector('.program-macos h3'));
