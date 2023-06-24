@@ -301,12 +301,17 @@ ol[class] {
 }
 
 .program-macos__item {
-    width: 50%;
+    width: 48%;
     height: 50%;
     padding: 30px 35px;
     background: #FAF5FF;
     position: relative;
     margin-bottom: 24px;
+}
+
+.program-macos__item:nth-child(1),
+.program-macos__item:nth-child(3) {
+    margin-right: 40px;
 }
 
 .program-macos__item:nth-child(1),
@@ -382,3 +387,50 @@ ol[class] {
     /*.program-macos__item:nth-of-type(even) {*/
     /*    margin-right: 30px;*/
     /*}*/
+
+@media screen and (max-width: 1250px) {
+    .music__main_block h2 {
+        font-size: 50px;
+    }
+
+
+    .main-music-h3 {
+        font-size: 37px;
+    }
+
+    .music__main_text p {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .video-music__main_text {
+        float: left;
+        width: 500px;
+        height: 300px;
+        margin: 0 27px 0 0;
+    }
+
+    .music__main_text {
+        margin-bottom: 0;
+    }
+
+    .music-inside {
+        padding: 40px 156px;
+    }
+
+    .content__music-inside p {
+        font-size: 20px;
+    }
+
+    .float-right {
+        margin-left: 8px;
+    }
+
+    .content__music-inside .container__music {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+}
