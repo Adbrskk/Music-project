@@ -193,10 +193,12 @@ ol[class] {
 }
 
 
-.music__macbook-advantages p,
-.music__macbook-advantages div {
-    transform: translateX(-1250px);
-    opacity: 0;
+@media screen and (min-width: 1400px) {
+    .music__macbook-advantages p,
+    .music__macbook-advantages div {
+        transform: translateX(-1250px);
+        opacity: 0;
+    }
 }
 
 .frameworks .music-h3 span {
