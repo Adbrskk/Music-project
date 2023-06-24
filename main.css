@@ -164,6 +164,38 @@ ol[class] {
     opacity: 0;
 }
 
+
+.music__macbook-advantages p,
+.music__macbook-advantages div {
+    transform: translateX(-1250px);
+    opacity: 0;
+}
+
+.frameworks .music-h3 span {
+    transform: translateY(-1250px);
+    opacity: 0;
+    display: block;
+}
+
+.frameworks-recommendations h3 span {
+    transform: translateY(-500px);
+    opacity: 0;
+    display: block;
+}
+
+.program-macos h3 span {
+    transform: translateY(-500px);
+    opacity: 0;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.for-creating-tracks h3 span {
+    transform: translateX(-500px);
+    opacity: 0;
+    display: block;
+}
+
 .music__macbook {
     background: #FAF5FF;
     padding-bottom: 68px;
