@@ -548,7 +548,9 @@ ol[class] {
     .frameworks-recommendations__preview--mobile {
         display: block;
         margin-bottom: 14px;
-        max-width: 100%;
+        max-width: calc(100% + 52px);
+        min-width: calc(100% + 52px);
+        margin-left: -26px;
     }
 
     .frameworks-recommendations__preview--desktop {
@@ -585,7 +587,7 @@ ol[class] {
     }
 
     .music__inspiration_block .music-h3 {
-        transform: translateX(-550px);
+        transform: translateX(-250px);
         padding-right: 0;
     }
 
@@ -600,7 +602,7 @@ ol[class] {
 
 @media screen and (max-width: 640px) {
     .music__main_block h2 {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .main-music-h3 {
@@ -615,10 +617,11 @@ ol[class] {
     .video-music__main_text {
         margin: 0 0 42px 0;
         float: none;
+        width: 100%;
     }
 
     .music-inside {
-        padding: 100px 70px;
+        padding: 40px 26px;
     }
 
     .music__inspiration_block .music-h3 {
