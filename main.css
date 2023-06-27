@@ -608,7 +608,8 @@ ol[class] {
     }
 
     .music__inspiration_block div:before {
-
+        left: -26px;
+        width: calc(100% + 52px);
     }
 }
 
@@ -791,12 +792,6 @@ ol[class] {
     .music__macbook-advantages div {
         text-align: left;
         margin-left: 20px;
-    }
-
-    @media screen and (max-width: 380px) {
-        .music-inside {
-            padding: 20px 0;
-        }
     }
 }
 
