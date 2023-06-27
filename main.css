@@ -413,11 +413,6 @@ ol[class] {
 /*}*/
 
 .program-macos__item:nth-child(1),
-.program-macos__item:nth-child(3) {
-    margin-right: 40px;
-}
-
-.program-macos__item:nth-child(1),
 .program-macos__item:nth-child(4) {
     opacity: 0;
 }
@@ -517,7 +512,7 @@ ol[class] {
     }
 
     .music-inside {
-        padding: 40px 156px;
+        padding: 40px 64px;
     }
 
     .content__music-inside p {
@@ -600,6 +595,23 @@ ol[class] {
     }
 }
 
+@media screen and (max-width: 960px) {
+    .float-left,
+    .float-right {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .music__macbook-advantages div {
+        margin-top: 18px;
+    }
+
+    .music__inspiration_block div:before {
+
+    }
+}
+
 @media screen and (max-width: 640px) {
     .music__main_block h2 {
         font-size: 42px;
@@ -651,16 +663,6 @@ ol[class] {
         margin-top: 10px;
     }
 
-    .float-left {
-        display: block;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .music__macbook-advantages div {
-        margin-top: 18px;
-    }
-
     .frameworks-recommendations img {
         margin: 0 auto;
         float: none;
@@ -701,10 +703,6 @@ ol[class] {
         background: url(main-block-img-mob.png);
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    .music-inside {
-        padding: 50px 0;
     }
 
     .music__main_block h2 {
