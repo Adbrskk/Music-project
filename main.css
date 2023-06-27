@@ -108,6 +108,10 @@ ol[class] {
     padding: 245px;
 }
 
+.display-text-mobile {
+    display: none;
+}
+
 .music__main_block h2 {
     font-weight: 600;
     font-size: 68px;
@@ -332,6 +336,10 @@ ol[class] {
     width: 100%;
 }
 
+.frameworks-recommendations__preview--mobile {
+    display: none;
+}
+
 .frameworks-recommendations h3 {
     font-style: normal;
     font-weight: 600;
@@ -403,6 +411,11 @@ ol[class] {
 /*    display: flex;*/
 /*    align-items: center;*/
 /*}*/
+
+.program-macos__item:nth-child(1),
+.program-macos__item:nth-child(3) {
+    margin-right: 40px;
+}
 
 .program-macos__item:nth-child(1),
 .program-macos__item:nth-child(4) {
@@ -477,3 +490,312 @@ ol[class] {
     /*.program-macos__item:nth-of-type(even) {*/
     /*    margin-right: 30px;*/
     /*}*/
+
+@media screen and (max-width: 1250px) {
+    .music__main_block h2 {
+        font-size: 50px;
+    }
+
+    .main-music-h3 {
+        font-size: 37px;
+    }
+
+    .music__main_text p {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .video-music__main_text {
+        float: left;
+        width: 500px;
+        height: 300px;
+        margin: 0 27px 10px 0;
+    }
+
+    .music__main_text {
+        margin-bottom: 0;
+    }
+
+    .music-inside {
+        padding: 40px 156px;
+    }
+
+    .content__music-inside p {
+        font-size: 20px;
+    }
+
+    .float-right {
+        margin-left: 8px;
+        margin-bottom: 4px;
+    }
+
+    .content__music-inside .container__music {
+        max-width: 1250px;
+    }
+
+    .music__macbook h3 {
+        font-size: 26px;
+    }
+
+    .float-left {
+        margin-right: 18px;
+    }
+
+    .frameworks h3 {
+        font-size: 32px;
+    }
+
+    .frameworks-recommendations__preview--mobile {
+        display: block;
+        margin-bottom: 14px;
+        max-width: 100%;
+    }
+
+    .frameworks-recommendations__preview--desktop {
+        display: none;
+    }
+
+    .frameworks-recommendations h3 {
+        font-size: 28px;
+    }
+
+    .program-macos h3 {
+        font-size: 30px;
+    }
+
+    .program-macos h3 span {
+        margin-bottom: 32px;
+    }
+
+    .program-macos__item {
+        width: 75%;
+    }
+
+    .program-macos__items {
+        justify-content: center;
+    }
+
+    .program-macos__item:nth-child(1),
+    .program-macos__item:nth-child(3) {
+        margin-right: 32px;
+    }
+
+    .music__main_block {
+        padding: 180px 150px;
+    }
+
+    .music__inspiration_block .music-h3 {
+        transform: translateX(-550px);
+        padding-right: 0;
+    }
+
+    .for-creating-tracks h3 {
+        font-size: 32px;
+    }
+
+    .big-font {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .music__main_block h2 {
+        font-size: 32px;
+    }
+
+    .main-music-h3 {
+        margin-top: 10px;
+        font-size: 32px;
+    }
+
+    .music__main_block {
+        padding: 128px 98px;
+    }
+
+    .video-music__main_text {
+        margin: 0 0 42px 0;
+        float: none;
+    }
+
+    .music-inside {
+        padding: 100px 70px;
+    }
+
+    .music__inspiration_block .music-h3 {
+        padding-right: 20px;
+        margin-bottom: 24px;
+    }
+
+    .display-img-desktop {
+        display: none;
+    }
+
+    .display-img-mobile {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .content__music-inside p {
+        margin-bottom: 24px;
+    }
+
+    .music-h3 {
+        font-size: 28px;
+    }
+
+    .music__macbook h3 {
+        margin-top: 10px;
+    }
+
+    .float-left {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .music__macbook-advantages div {
+        margin-top: 18px;
+    }
+
+    .frameworks-recommendations img {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .frameworks-recommendations h3 span {
+        margin-top: 20px;
+    }
+
+    .program-macos__item {
+        width: 100%;
+    }
+
+    .frameworks .display-img-mobile {
+        margin: 0 auto;
+    }
+
+    .program-macos .p-last-child {
+
+    }
+
+    .for-creating-tracks__content-block .float-right {
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .for-creating-tracks__content-block .float-left {
+        margin-bottom: 18px;
+    }
+
+    .video-in-detail {
+        height: 278px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .music__main_block {
+        background: url(main-block-img-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .music-inside {
+        padding: 50px 0;
+    }
+
+    .music__main_block h2 {
+        font-size: 35px;
+    }
+
+    .main-music-h3 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .video-music__main_text {
+        width: 100%;
+    }
+
+    .content__music-inside p {
+        text-align: center;
+    }
+
+    .program-macos__items p,
+    .program-macos__items div {
+        text-align: left;
+    }
+
+
+    .content__music-inside p {
+        font-size: 18px;
+    }
+
+    .display-text-mobile {
+        display: block;
+    }
+
+    .display-text-desktop {
+        display: none;
+    }
+
+    .display-img-mobile {
+        width: 100%;
+    }
+
+    .music__inspiration_block .music-h3 {
+        transform: none;
+        margin: 0 15px 26px 15px;
+    }
+
+    .music__macbook h3 {
+        font-size: 22px;
+        margin-top: 22px;
+        margin-left: 15px;
+    }
+
+    .music__macbook-advantages p,
+    .music__macbook-advantages div {
+        margin-left: 20px;
+    }
+
+    .for-creating-tracks h3 {
+        margin: 0 15px 10px 15px;
+    }
+
+    .program-macos__item {
+        padding: 18px 22px;
+        margin-bottom: 20px;
+    }
+
+    .program-macos .p-last-child {
+        margin-bottom: 10px;
+    }
+
+    .for-creating-tracks__content-block p,
+    .for-creating-tracks__content-block div {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .for-creating-tracks__content-block .float-left {
+        display: none;
+    }
+
+    .for-creating-tracks__content-block .float-right {
+        margin-bottom: 6px;
+    }
+
+    .music__macbook-advantages p,
+    .music__macbook-advantages div {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: 380px) {
+        .music-inside {
+            padding: 20px 0;
+        }
+    }
+}
+
